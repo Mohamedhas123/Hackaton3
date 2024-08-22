@@ -198,7 +198,7 @@ namespace HackatonGroup3_Web.Controllers
 		
 
 			await _signInManager.SignOutAsync();
-			return RedirectToAction(nameof(AccountController.Login));
+			return RedirectToAction(nameof(Login));
 
         }
     }
