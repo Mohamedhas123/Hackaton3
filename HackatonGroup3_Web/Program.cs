@@ -36,15 +36,15 @@ app.UseRouting();
 app.UseAuthorization();
 
 // Redirect to login page by default
-app.MapGet("/", context =>
-{
-    context.Response.Redirect("/Identity/Account/Login");
-    return Task.CompletedTask;
-});
+//app.MapGet("/", context =>
+//{
+//    context.Response.Redirect("/Identity/Account/Login");
+//    return Task.CompletedTask;
+//});
 
-//app.MapControllerRoute(
-//    name: "default",
-//    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
 
 app.Run();
