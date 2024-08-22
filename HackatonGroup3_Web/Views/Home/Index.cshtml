@@ -21,13 +21,59 @@
             <div class="tab-content pt-2" id="borderedTabContent">
                 <div class="tab-pane fade show active" id="bordered-manual" role="tabpanel" aria-labelledby="manual-tab">
                 </div>
-                <div class="tab-pane fade" id="bordered-auto" role="tabpanel" aria-labelledby="auto-tab">
+                <div class="tab-pane fade p-2" id="bordered-auto" role="tabpanel" aria-labelledby="auto-tab">
+                    <p>Start an automatic control here ... </p>
+
+
+
                     <div class="row">
-                        
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" placeholder="Enter the Ip Adress of the machine here ">
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn-get-started"> Connect</button>
+                        </div>                      
+
                     </div>
-                    <div class="row">
-                        <div class="col-6"> </div>
-                        <div class="col-6"> Indicateur</div>
+                    <div class="row mt-2">                        
+                        <div class="col-md-9">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Control</h5>
+                                    <!-- List group With Icons -->
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ff0000" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+                                                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5" />
+                                            </svg> System on
+                                        </li>
+                                        <li class="list-group-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#00ff00" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+                                                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5" />
+                                            </svg> Voltage On 
+                                        </li>
+                                        <li class="list-group-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ff0000" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+                                                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5" />
+                                            </svg> Failure
+                                        </li>
+                                        
+                                       
+                                    </ul><!-- End List group With Icons -->
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Machine Info</h5>
+                                    <p> Statut : <strong> Not Started</strong></p>
+                                    <button class="btn-get-started"> Start</button>
+                                    <button class="btn-get-started"> Stop</button>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
                 </div>

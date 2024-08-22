@@ -15,7 +15,7 @@ namespace HackatonGroup3_Web.Controllers
 
         public IActionResult Index()
         {
-       /* https://github.com/Mohamedhas123/Hackaton3.git*/
+      
             return View();
         }
 
