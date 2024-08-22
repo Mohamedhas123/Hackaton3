@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/HackatonGroup3_Web/Data/Migrations/20240822135146_init.cs
+/HackatonGroup3_Web/Data/Migrations/20240822135146_init.Designer.cs
+/HackatonGroup3_Web/Data/Migrations/ApplicationDbContextModelSnapshot.cs
