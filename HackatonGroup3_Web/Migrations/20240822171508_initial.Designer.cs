@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HackatonGroup3_Web.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240822170227_Hackaton")]
-    partial class Hackaton
+    [Migration("20240822171508_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
