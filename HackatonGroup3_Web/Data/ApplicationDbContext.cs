@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using HackatonGroup3_Web.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace HackatonGroup3_Web.Data
@@ -9,5 +10,6 @@ namespace HackatonGroup3_Web.Data
             : base(options)
         {
         }
+        public DbSet<Users> users { get; set; }
     }
 }
