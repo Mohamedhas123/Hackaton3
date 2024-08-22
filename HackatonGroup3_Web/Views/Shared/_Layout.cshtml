@@ -15,30 +15,32 @@
         <div class="container d-flex align-items-center">
 
             <h1 class="logo me-auto"><a href="#"><span>Hack</span>aton</a></h1>
-           
+
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a href="#" class="active">Home</a></li>
+                    <li>
+                        <a href="#" class="active">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-power" viewBox="0 0 16 16">
+                                <path d="M7.5 1v7h1V1z" />
+                                <path d="M3 8.812a5 5 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812" />
+                            </svg>
+                        </a>
+                    </li>
 
                 </ul>
                @*  <i class="bi bi-list mobile-nav-toggle"></i> *@
                 <partial name="_LoginPartial" />
             </nav><!-- .navbar -->
 
-            
+
         </div>
     </header><!-- End Header -->
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+    <main id="main">
+        @RenderBody()
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - HackatonGroup3_Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+    </main><!-- End #main -->
+
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
