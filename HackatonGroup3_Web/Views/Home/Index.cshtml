@@ -20,6 +20,45 @@
             </ul>
             <div class="tab-content pt-2" id="borderedTabContent">
                 <div class="tab-pane fade show active" id="bordered-manual" role="tabpanel" aria-labelledby="manual-tab">
+                    <!-- Bordered Tabs -->
+                    <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="lac1-tab" data-bs-toggle="tab" data-bs-target="#bordered-lac1" type="button" role="tab" aria-controls="lac1" aria-selected="true">LAC 1</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="lac2-tab" data-bs-toggle="tab" data-bs-target="#bordered-lac2" type="button" role="tab" aria-controls="lac2" aria-selected="false">LAC 2</button>
+                        </li>                        
+                    </ul>
+                    <div class="tab-content pt-2" id="borderedTabContent">
+                        <div class="tab-pane fade show active" id="bordered-lac1" aria-labelledby="lac1-tab">
+                            <div class="content">
+                                <div class="box-container">
+                                    <div class="box">
+                                        <h3>ARC01</h3>
+                                        <div class="comment">Commente</div>
+                                    </div>
+                                    <div class="box">
+                                        <h3>ARC05</h3>
+                                        <div class="comment">Commente</div>
+                                    </div>
+                                    <div class="box">
+                                        <h3>ARC08</h3>
+                                        <div class="comment">Commente</div>
+                                    </div>
+                                    <div class="box">
+                                        <h3>LT12</h3>
+                                        <div class="comment">Commente</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="tab-pane fade p-2" id="bordered-lac2" aria-labelledby="lac2-tab">
+                            
+                        </div>
+                        
+                    </div><!-- End Bordered Tabs -->
+
                 </div>
                 <div class="tab-pane fade p-2" id="bordered-auto" role="tabpanel" aria-labelledby="auto-tab">
                     <p>Start an automatic control here ... </p>
