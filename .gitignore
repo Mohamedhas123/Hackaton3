@@ -399,3 +399,7 @@ FodyWeavers.xsd
 /HackatonGroup3_Web/Data/Migrations/20240822135146_init.cs
 /HackatonGroup3_Web/Data/Migrations/20240822135146_init.Designer.cs
 /HackatonGroup3_Web/Data/Migrations/ApplicationDbContextModelSnapshot.cs
+/HackatonGroup3_Web/Migrations/20240822171338_test.cs
+/HackatonGroup3_Web/Migrations/20240822171338_test.Designer.cs
+/HackatonGroup3_Web/Migrations/20240822171508_initial.cs
+/HackatonGroup3_Web/Migrations/20240822171508_initial.Designer.cs
