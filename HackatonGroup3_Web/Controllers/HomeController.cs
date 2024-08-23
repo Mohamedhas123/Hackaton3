@@ -7,32 +7,45 @@ namespace HackatonGroup3_Web.Controllers
 {
     public class HomeController : Controller
     {
+        AdsClient _client;
+        HomeViewModel model;
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger,AdsClient adsClient, HomeViewModel o_model)
         {
+            _client = adsClient;
+            model = o_model;
             _logger = logger;
+
         }
+        
 
         public IActionResult Index()
         {
-      
-            return View();
-        }
+            
+            
 
-        public IActionResult Run()
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult Run(string ipAdress)
         {
-            AdsClient client = new AdsClient();
+            
+            string MachineIp = string.Empty;
 
             try
             {
-                client.Connect("127.0.0.0", 851);
-                
-                if(client.IsConnected)
+                if (String.IsNullOrEmpty(ipAdress))
                 {
-                    uint motor = client.CreateVariableHandle("varname");
-                    client.WriteAny(motor, true);
+                    return RedirectToAction("Index");
                 }
+               
+                MachineIp = ipAdress;
+                _client.Connect(ipAdress, 851);
+                model.MachineStatus = "Connected"; 
+
+                return RedirectToAction("Index");
+                
             }
             catch (Exception)
             {
@@ -51,8 +64,39 @@ namespace HackatonGroup3_Web.Controllers
             // ARC(id, capteurData, next(controller, motor)) // captuerdata sera envoyer a nextcontroller de prochaine RC
             // RC(id, capteurData, next(controller, motor))
 
-            return RedirectToAction("Index");
         }
+
+        public IActionResult Start() 
+        {
+            uint motor1 = _client.CreateVariableHandle("GVL10_VAR_PRG.bTestPowerEnable12");
+            uint motor2 = _client.CreateVariableHandle("GVL10_VAR_PRG.bTestPowerEnable13");
+            uint motor1_2 = _client.CreateVariableHandle("GVL10_VAR_PRG.bMoveAxisMotor1_2");
+
+            
+
+            _client.WriteAny(motor1, true);
+            _client.WriteAny(motor2, true);
+            _client.WriteAny(motor1_2, true);
+            model.MachineStatus = "Started";
+            model.Outputs[0].State = true;
+            model.Outputs[1].State = true;
+            return RedirectToAction("index");
+        }
+        public IActionResult Stop()
+        {
+            uint motor1 = _client.CreateVariableHandle("GVL10_VAR_PRG.bTestPowerEnable12");
+            uint motor2 = _client.CreateVariableHandle("GVL10_VAR_PRG.bTestPowerEnable13");
+            uint motor1_2 = _client.CreateVariableHandle("GVL10_VAR_PRG.bMoveAxisMotor1_2");
+
+
+            _client.WriteAny(motor1, false);
+            _client.WriteAny(motor2, false);
+            model.MachineStatus = "Connected";
+            return RedirectToAction("index");
+        }
+
+
+
 
         public IActionResult Privacy()
         {

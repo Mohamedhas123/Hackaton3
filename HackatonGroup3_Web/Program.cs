@@ -1,6 +1,8 @@
 using HackatonGroup3_Web.Data;
+using HackatonGroup3_Web.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using TwinCAT.Ads;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +30,9 @@ builder.Services.ConfigureApplicationCookie(opt =>
 });
 
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddSingleton<AdsClient>();
+builder.Services.AddSingleton<HomeViewModel>();
 
 var app = builder.Build();
 
