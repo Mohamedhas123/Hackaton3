@@ -7,8 +7,14 @@ namespace HackatonGroup3_Web.Models
         public string? MachineStatus { get; set; } = "Disconnected";
         public List<Output>? Outputs { get; set; } = new() 
         {
-            new () { DisplayName= "Motor 1", State=false },
-            new () { DisplayName= "Motor 2", State=false }
+            new () { DisplayName= "Control Voltage On", State=false },
+            new () { DisplayName= "Control Voltage On Indicator", State=false },
+            new () { DisplayName= "System On", State=false },
+            new () { DisplayName= "System On Indicator", State=false },
+            new () { DisplayName= "Stop Unlock", State=false },
+            new () { DisplayName= "Stop Operated Indicator", State=false },
+            new () { DisplayName= "Collecting Failure Indicator", State=false },
+            new () { DisplayName= "Starting Alarm Horn", State=false },
         }; 
     }
 }

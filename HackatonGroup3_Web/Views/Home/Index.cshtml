@@ -5,143 +5,168 @@
 
 <!-- =======  Section ======= -->
 <section class="mt-2">
-    <div class="row h-100">
+    <div class="row w-100 h-100">
         <div class="col-lg-12">
-            <!-- Bordered Tabs -->
-            <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="manual-tab" data-bs-toggle="tab" data-bs-target="#bordered-manual" type="button" role="tab" aria-controls="manual" aria-selected="true">Manual</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="auto-tab" data-bs-toggle="tab" data-bs-target="#bordered-auto" type="button" role="tab" aria-controls="auto" aria-selected="false">Automatic</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="config-tab" data-bs-toggle="tab" data-bs-target="#bordered-config" type="button" role="tab" aria-controls="config" aria-selected="false">Configuration</button>
-                </li>
-            </ul>
-            <div class="tab-content pt-2" id="borderedTabContent">
-                <div class="tab-pane fade show active" id="bordered-manual" role="tabpanel" aria-labelledby="manual-tab">
-                    <!-- Bordered Tabs -->
-                    <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="lac1-tab" data-bs-toggle="tab" data-bs-target="#bordered-lac1" type="button" role="tab" aria-controls="lac1" aria-selected="true">LAC 1</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="lac2-tab" data-bs-toggle="tab" data-bs-target="#bordered-lac2" type="button" role="tab" aria-controls="lac2" aria-selected="false">LAC 2</button>
-                        </li>                        
-                    </ul>
-                    <div class="tab-content pt-2" id="borderedTabContent">
-                        <div class="tab-pane fade show active" id="bordered-lac1" aria-labelledby="lac1-tab">
-                            <div class="content">
-                                <div class="box-container">
-                                    <div class="box">
-                                        <h3>ARC01</h3>
-                                        <div class="comment">Commente</div>
-                                    </div>
-                                    <div class="box">
-                                        <h3>ARC05</h3>
-                                        <div class="comment">Commente</div>
-                                    </div>
-                                    <div class="box">
-                                        <h3>ARC08</h3>
-                                        <div class="comment">Commente</div>
-                                    </div>
-                                    <div class="box">
-                                        <h3>LT12</h3>
-                                        <div class="comment">Commente</div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="tab-pane fade p-2" id="bordered-lac2" aria-labelledby="lac2-tab">
-                            
-                        </div>
+            <!-- Vertical Pills Tabs -->
+            <div class="row d-flex align-items-start mt-5">
+                <div class="col-3 nav flex-column nav-pills p-4 border align-items-start" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z" />
+                        </svg>
+                        <span class="px-4">Manual</span>
                         
-                    </div><!-- End Bordered Tabs -->
-
+                    </button>
+                    <button class="nav-link" id="v-pills-install-tab" data-bs-toggle="pill" data-bs-target="#v-pills-install" type="button" role="tab" aria-controls="v-pills-install" aria-selected="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z" />
+                        </svg>
+                        <span class="px-4">Automatic</span>
+                        
+                    </button>
+                    <button class="nav-link" id="v-pills-config-tab" data-bs-toggle="pill" data-bs-target="#v-pills-config" type="button" role="tab" aria-controls="v-pills-config" aria-selected="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-sliders" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1z" />
+                        </svg>
+                        <span class="px-4">Configuration</span>
+                        
+                        
+                    </button>
+                    
                 </div>
-                <div class="tab-pane fade p-2" id="bordered-auto" role="tabpanel" aria-labelledby="auto-tab">
-                    @if(Model.MachineStatus != "Disconnected")
-                    {
-                        <p>Start an automatic control here ... </p>
+                <div class="col-9 tab-content px-3" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active " id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <!-- Bordered Tabs -->
+                        <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#bordered-home" type="button" role="tab" aria-controls="home" aria-selected="true">LAC 01</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bordered-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">LAC O2</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content " id="borderedTabContent">
+                            <!--Lac 1-->
+                            <div class="tab-pane fade show active pt-4" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="row ">
+                                    <div class="col-md-3">
+                                        <div class="card text-center ">
+                                            <div class="card-header bg-primary"> <h5 class="text-white"> ARC 01</h5></div>
+                                            <div class="card-body">
+                                                <p>started ...</p>
+
+                                                <a class="btn btn-md text-white bg-primary"> Stop</a>
 
 
-                        <form asp-controller="Home" asp-action="Run" method="post">
-                            <div class="row">
-                                <div class="col-md-10">
-                                    <input type="text" name="ipAdress" class="form-control" placeholder="Enter the Ip Adress of the machine here ">
-                                </div>
-                                <div class="col-md-2">
-                                    <button type="submit" @* asp-controller="Home" asp-action="Run" *@ class="btn-get-started"> Connect</button>
-                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card text-center ">
+                                            <div class="card-header" style="background-color:#182351"> <h5 class="text-white"> ARC 02</h5></div>
+                                            <div class="card-body">
+                                                <p>something ...</p>
 
-                            </div>
-                        </form>
-                    }
-                    
-                    
-                    <div class="row mt-2">                        
-                        <div class="col-md-9">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Control</h5>
-                                    
-                                    <!-- List group With Icons -->
-                                    <ul class="list-group">
-                                        @foreach (var item in Model.Outputs)
-                                        {
-                                            <li class="list-group-item">
-                                                @if (item.State == true)
-                                                {
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#00ff00" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
-                                                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5" />
-                                                    </svg>
-                                                }
-                                                else
-                                                {
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ff0000" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
-                                                        <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5" />
-                                                    </svg>
-                                                }                                                
-                                                @item.DisplayName
-                                            </li>
-                                        }
-                                                                               
-                                       
-                                    </ul><!-- End List group With Icons -->
-                                   
+                                                <a class="btn btn-md text-white" style="background-color:#182351"> Start</a>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Machine Info</h5>
-                                    <p> Statut : <strong> @Model.MachineStatus </strong></p>
-                                    @if(Model.MachineStatus == "Connected")
-                                    {
-                                        <a asp-action="Start" class="btn-get-started"> Start</a>
-                                        <a class="btn-get-started" disable> Stop</a>
-                                    }
-                                    @if (Model.MachineStatus == "Started")
-                                    {
-                                        <a class="btn-get-started" disable> Start</a>
-                                        <a asp-action="Stop" class="btn-get-started"> Stop</a>
-                                    }
-                                    
-                                </div>
+                            <!--Lac 2-->
+                            <div class="tab-pane fade pt-4" id="bordered-profile" role="tabpanel" aria-labelledby="profile-tab">
+                                
                             </div>
-                        </div>
-
+                        </div><!-- End Bordered Tabs -->
+                        
                     </div>
-                </div>
-                <div class="tab-pane fade" id="bordered-config" role="tabpanel" aria-labelledby="config-tab">
-                </div>
-            </div><!-- End Bordered Tabs -->
+                    
+                    <div class="tab-pane fade" id="v-pills-install" role="tabpanel" aria-labelledby="v-pills-install-tab">
+                        <div class="col-12">
+                            @if (Model.MachineStatus == "Disconnected")
+                            {
+                                <p>Start an automatic control here ... </p>
+                                <form asp-controller="Home" asp-action="Run" method="post">
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <input type="text" name="ipAdress" class="form-control" placeholder="Enter the Ip Adress of the machine here ">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <button type="submit" class="btn-get-started"> Connect</button>
+                                        </div>
 
+                                    </div>
+                                </form>
+                            }
+                            else
+                            {                               
+                                <div class="row">                                        
+                                    <div class="col-md-3">
+                                        <button asp-controller="Home" asp-action="Run" class="btn-get-started"> Disconnect</button>
+                                    </div>
+                                </div>                               
+                            }
+                        </div>                       
+                        <div class="row mt-2">
+                            <div class="col-md-9">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Control</h5>
+                                        <!-- List group With Icons -->
+                                        <ul class="list-group">
+                                            @foreach (var item in Model.Outputs)
+                                            {
+                                                <li class="list-group-item">
+                                                    @if (item.State == true)
+                                                    {
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#00ff00" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+                                                            <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5" />
+                                                        </svg>
+                                                    }
+                                                    else
+                                                    {
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ff0000" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+                                                            <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5" />
+                                                        </svg>
+                                                    }
+                                                    @item.DisplayName
+                                                </li>
+                                            }
+                                        </ul><!-- End List group With Icons -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Machine Info</h5>
+                                        <p> Statut : <strong> @Model.MachineStatus </strong></p>
+                                        @if (Model.MachineStatus == "Connected")
+                                        {
+                                            <a asp-action="Start" class="btn-get-started"> Start</a>
+                                            <a class="btn btn-sm" disable> Stop</a>
+                                        }
+                                        @if (Model.MachineStatus == "Started")
+                                        {
+                                            <a class="btn-get-started" disable> Start</a>
+                                            <a asp-action="Stop" class="btn-get-started"> Stop</a>
+                                        }
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="tab-pane fade" id="v-pills-config" role="tabpanel" aria-labelledby="v-pills-config-tab">
+                      
+                    </div>
+                   
+                </div>
+            </div>
+            <!-- End Vertical Pills Tabs -->
         </div>
     </div>
-
-
 </section><!-- End Section -->
